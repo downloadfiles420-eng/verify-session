@@ -1,0 +1,94 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ ALERT: TARGET LOGGED ]</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff66;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .warning-box {
+            border: 2px solid #ff3333;
+            background-color: #1a0505;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(255, 51, 51, 0.2);
+        }
+        h1 {
+            color: #ff3333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .highlight {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .meta-data {
+            background-color: #111;
+            border-left: 3px solid #00ff66;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        .meta-data span {
+            color: #00ff66;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #444;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="warning-box">
+        <h1>[ SESSION INTRUSION DETECTED ]</h1>
+        <p class="highlight">You stepped into the wrong network.</p>
+        <p>You thought you were targeting an easy mark. You thought you were anonymous. <strong>You were wrong.</strong></p>
+        <p>You are not safe this is designed to catch you.</p>
+    </div>
+
+    <h2>[ DIGITAL FOOTPRINT EXTRACTED ]</h2>
+    <p>I own you now. The following metadata has been flagged and cached:</p>
+    
+    <div class="meta-data">
+        <p><strong>System OS/Browser:</strong> <span id="user-agent">Loading...</span></p>
+        <p><strong>Local Time:</strong> <span id="local-time">Loading...</span></p>
+        <p><strong>Connection Status:</strong> <span>TRACED / LOGGED</span></p>
+    </div>
+
+    <h2>[ YOUR NEXT MOVE MATTERS ]</h2>
+    <p>Your digital signature has been logged. We are locating you and all your account, this compiled data package will be routed to your network provider's abuse desk and cyber fraud databases.</p>
+    
+    <p class="highlight">You are not safe here. Close this tab, delete the contact information, and walk away. Do not mess us!!</p>
+
+    <p><code>[ LOG_FILE_SAVED_SUCCESSFULLY ]</code></p>
+
+    <footer>
+        Standard NetSec Protocol // Honeypot ID: #8842-X
+    </footer>
+
+    <script>
+        // Simple script to display their basic browser info to spook them
+        document.getElementById('user-agent').textContent = navigator.userAgent;
+        document.getElementById('local-time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
